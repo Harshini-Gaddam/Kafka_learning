@@ -47,9 +47,11 @@ cd /opt/kafka/bin
 
 1. In a new terminal, enter the Kafka container again:
 docker exec -it <container_id> /bin/bash
-Copy2. Navigate to the Kafka bin directory:
+
+2. Navigate to the Kafka bin directory:
 cd /opt/kafka/bin
-Copy3. Run the Kafka console consumer:
+
+3. Run the Kafka console consumer:
 ./kafka-console-consumer.sh --topic test-topic --bootstrap-server localhost:9092 --from-beginning
 
 Messages typed in the producer console will be displayed in the consumer console.
